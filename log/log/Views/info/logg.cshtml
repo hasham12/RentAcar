@@ -1,0 +1,41 @@
+﻿@model log.Models.login
+
+@{
+    ViewBag.Title = "logg";
+}
+
+<h2>logg</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>MyLogin</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.name)
+            @Html.ValidationMessageFor(model => model.name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.pass)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.pass)
+            @Html.ValidationMessageFor(model => model.pass)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+

@@ -1,0 +1,36 @@
+﻿@model MvcApplication6.labtask1
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>labtask1</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StudentID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudentID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StudentName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudentName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FatherName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FatherName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

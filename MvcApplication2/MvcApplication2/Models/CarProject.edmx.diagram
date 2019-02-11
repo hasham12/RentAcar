@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a4360ef687cc497a8429ddfda455f673" Name="Diagram1">
+        <EntityTypeShape EntityType="carProjectModel.CarInfo" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="carProjectModel.CarMake" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="carProjectModel.CustomerInfo" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="carProjectModel.CustomerType" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="carProjectModel.DriverInfo" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="carProjectModel.PickLocation" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="carProjectModel.Rental" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="carProjectModel.sysdiagram" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="carProjectModel.FK__CarInfo__MakeNam__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="carProjectModel.FK__Rental__CarId__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="carProjectModel.FK__CustomerI__Custo__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="carProjectModel.FK__Rental__Customer__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="carProjectModel.FK__Rental__DriverID__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="carProjectModel.FK__Rental__Location__1ED998B2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

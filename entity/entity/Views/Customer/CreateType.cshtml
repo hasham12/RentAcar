@@ -1,0 +1,45 @@
+﻿@model entity.CustomerType
+
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>CustomerType</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CustTypeId)
+        </div>
+        <div class="editor-field"> mubarak
+            @Html.EditorFor(model => model.CustTypeId)
+            @Html.ValidationMessageFor(model => model.CustTypeId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CustTypeName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CustTypeName)
+            @Html.ValidationMessageFor(model => model.CustTypeName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Discount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Discount)
+            @Html.ValidationMessageFor(model => model.Discount)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

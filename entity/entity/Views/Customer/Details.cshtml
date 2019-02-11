@@ -1,0 +1,43 @@
+﻿@model entity.CustomerInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>CustomerInfo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerCNIC)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerCNIC)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerType.CustTypeName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerType.CustTypeName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

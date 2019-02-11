@@ -1,0 +1,39 @@
+﻿@model entity.DriverInfo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>DriverInfo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DriverId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DriverId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DriverName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DriverName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DriverCharges)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DriverCharges)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

@@ -1,0 +1,6 @@
+c:\users\hasham\documents\visual studio 2012\Projects\ConsoleApplication2voice\ConsoleApplication2voice\bin\Debug\ConsoleApplication2voice.exe.config
+C:\Users\hasham\Documents\Visual Studio 2012\Projects\ConsoleApplication2voice\ConsoleApplication2voice\bin\Debug\ConsoleApplication2voice.exe
+C:\Users\hasham\Documents\Visual Studio 2012\Projects\ConsoleApplication2voice\ConsoleApplication2voice\bin\Debug\ConsoleApplication2voice.pdb
+C:\Users\hasham\Documents\Visual Studio 2012\Projects\ConsoleApplication2voice\ConsoleApplication2voice\obj\Debug\ConsoleApplication2voice.csprojResolveAssemblyReference.cache
+C:\Users\hasham\Documents\Visual Studio 2012\Projects\ConsoleApplication2voice\ConsoleApplication2voice\obj\Debug\ConsoleApplication2voice.exe
+C:\Users\hasham\Documents\Visual Studio 2012\Projects\ConsoleApplication2voice\ConsoleApplication2voice\obj\Debug\ConsoleApplication2voice.pdb

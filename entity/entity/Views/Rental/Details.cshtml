@@ -1,0 +1,57 @@
+﻿@model entity.Rental
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Rental</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CheckInDay)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CheckInDay)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CheckOutDay)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CheckOutDay)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerInfo.CustomerName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerInfo.CustomerName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CarInfo.CarModel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CarInfo.CarModel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DriverInfo.DriverName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DriverInfo.DriverName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PickLocation.Country)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PickLocation.Country)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.RentalID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

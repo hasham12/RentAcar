@@ -1,0 +1,6 @@
+c:\users\hasham\documents\visual studio 2012\Projects\TA ship prac\TA ship prac\bin\Debug\TA ship prac.exe.config
+c:\users\hasham\documents\visual studio 2012\Projects\TA ship prac\TA ship prac\bin\Debug\TA ship prac.exe
+c:\users\hasham\documents\visual studio 2012\Projects\TA ship prac\TA ship prac\bin\Debug\TA ship prac.pdb
+c:\users\hasham\documents\visual studio 2012\Projects\TA ship prac\TA ship prac\obj\Debug\TA ship prac.csprojResolveAssemblyReference.cache
+c:\users\hasham\documents\visual studio 2012\Projects\TA ship prac\TA ship prac\obj\Debug\TA ship prac.exe
+c:\users\hasham\documents\visual studio 2012\Projects\TA ship prac\TA ship prac\obj\Debug\TA ship prac.pdb

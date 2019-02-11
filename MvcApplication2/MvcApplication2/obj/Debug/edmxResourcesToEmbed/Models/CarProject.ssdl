@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="carProjectModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="carProjectModelStoreContainer">
+    <EntitySet Name="CarInfo" EntityType="carProjectModel.Store.CarInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CarMake" EntityType="carProjectModel.Store.CarMake" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerInfo" EntityType="carProjectModel.Store.CustomerInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerType" EntityType="carProjectModel.Store.CustomerType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DriverInfo" EntityType="carProjectModel.Store.DriverInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PickLocation" EntityType="carProjectModel.Store.PickLocation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rental" EntityType="carProjectModel.Store.Rental" store:Type="Tables" store:Schema="dbo" store:Name="Rental">
+      <DefiningQuery>SELECT 
+      [Rental].[CheckInDay] AS [CheckInDay], 
+      [Rental].[CheckOutDay] AS [CheckOutDay], 
+      [Rental].[CustomerID] AS [CustomerID], 
+      [Rental].[DriverID] AS [DriverID], 
+      [Rental].[LocationID] AS [LocationID], 
+      [Rental].[CarId] AS [CarId]
+      FROM [dbo].[Rental] AS [Rental]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysdiagrams" EntityType="carProjectModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__CarInfo__MakeNam__182C9B23" Association="carProjectModel.Store.FK__CarInfo__MakeNam__182C9B23">
+      <End Role="CarMake" EntitySet="CarMake" />
+      <End Role="CarInfo" EntitySet="CarInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CustomerI__Custo__1B0907CE" Association="carProjectModel.Store.FK__CustomerI__Custo__1B0907CE">
+      <End Role="CustomerType" EntitySet="CustomerType" />
+      <End Role="CustomerInfo" EntitySet="CustomerInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rental__CarId__1FCDBCEB" Association="carProjectModel.Store.FK__Rental__CarId__1FCDBCEB">
+      <End Role="CarInfo" EntitySet="CarInfo" />
+      <End Role="Rental" EntitySet="Rental" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rental__Customer__1CF15040" Association="carProjectModel.Store.FK__Rental__Customer__1CF15040">
+      <End Role="CustomerInfo" EntitySet="CustomerInfo" />
+      <End Role="Rental" EntitySet="Rental" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rental__DriverID__1DE57479" Association="carProjectModel.Store.FK__Rental__DriverID__1DE57479">
+      <End Role="DriverInfo" EntitySet="DriverInfo" />
+      <End Role="Rental" EntitySet="Rental" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rental__Location__1ED998B2" Association="carProjectModel.Store.FK__Rental__Location__1ED998B2">
+      <End Role="PickLocation" EntitySet="PickLocation" />
+      <End Role="Rental" EntitySet="Rental" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CarInfo">
+    <Key>
+      <PropertyRef Name="CarId" />
+    </Key>
+    <Property Name="CarId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CarModel" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="EngineNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ChasisNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="PlateNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="RegistrationYear" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="RentCharges" Type="decimal" Nullable="false" />
+    <Property Name="RentChargesKm" Type="decimal" Nullable="false" />
+    <Property Name="MakeNameID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CarMake">
+    <Key>
+      <PropertyRef Name="MakeNameID" />
+    </Key>
+    <Property Name="MakeNameID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MakeName" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CustomerInfo">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CustomerCNIC" Type="decimal" Nullable="false" />
+    <Property Name="CustomerTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerType">
+    <Key>
+      <PropertyRef Name="CustomerTypeID" />
+    </Key>
+    <Property Name="CustomerTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerTypeName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Discount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DriverInfo">
+    <Key>
+      <PropertyRef Name="DriverID" />
+    </Key>
+    <Property Name="DriverID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DriverName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DriverCharges" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PickLocation">
+    <Key>
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Name="LocationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Country" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="City" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="PickAddress" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'carProject.dbo.Rental' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Rental">
+    <Key>
+      <PropertyRef Name="CheckInDay" />
+      <PropertyRef Name="CheckOutDay" />
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="DriverID" />
+      <PropertyRef Name="LocationID" />
+      <PropertyRef Name="CarId" />
+    </Key>
+    <Property Name="CheckInDay" Type="date" Nullable="false" />
+    <Property Name="CheckOutDay" Type="date" Nullable="false" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="DriverID" Type="int" Nullable="false" />
+    <Property Name="LocationID" Type="int" Nullable="false" />
+    <Property Name="CarId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK__CarInfo__MakeNam__182C9B23">
+    <End Role="CarMake" Type="carProjectModel.Store.CarMake" Multiplicity="1" />
+    <End Role="CarInfo" Type="carProjectModel.Store.CarInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CarMake">
+        <PropertyRef Name="MakeNameID" />
+      </Principal>
+      <Dependent Role="CarInfo">
+        <PropertyRef Name="MakeNameID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CustomerI__Custo__1B0907CE">
+    <End Role="CustomerType" Type="carProjectModel.Store.CustomerType" Multiplicity="1" />
+    <End Role="CustomerInfo" Type="carProjectModel.Store.CustomerInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerType">
+        <PropertyRef Name="CustomerTypeID" />
+      </Principal>
+      <Dependent Role="CustomerInfo">
+        <PropertyRef Name="CustomerTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rental__CarId__1FCDBCEB">
+    <End Role="CarInfo" Type="carProjectModel.Store.CarInfo" Multiplicity="1" />
+    <End Role="Rental" Type="carProjectModel.Store.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CarInfo">
+        <PropertyRef Name="CarId" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="CarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rental__Customer__1CF15040">
+    <End Role="CustomerInfo" Type="carProjectModel.Store.CustomerInfo" Multiplicity="1" />
+    <End Role="Rental" Type="carProjectModel.Store.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerInfo">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rental__DriverID__1DE57479">
+    <End Role="DriverInfo" Type="carProjectModel.Store.DriverInfo" Multiplicity="1" />
+    <End Role="Rental" Type="carProjectModel.Store.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DriverInfo">
+        <PropertyRef Name="DriverID" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="DriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rental__Location__1ED998B2">
+    <End Role="PickLocation" Type="carProjectModel.Store.PickLocation" Multiplicity="1" />
+    <End Role="Rental" Type="carProjectModel.Store.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PickLocation">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="LocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

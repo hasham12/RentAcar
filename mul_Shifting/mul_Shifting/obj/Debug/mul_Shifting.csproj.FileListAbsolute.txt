@@ -1,0 +1,6 @@
+c:\users\hasham\documents\visual studio 2012\Projects\mul_Shifting\mul_Shifting\bin\Debug\mul_Shifting.exe.config
+c:\users\hasham\documents\visual studio 2012\Projects\mul_Shifting\mul_Shifting\bin\Debug\mul_Shifting.exe
+c:\users\hasham\documents\visual studio 2012\Projects\mul_Shifting\mul_Shifting\bin\Debug\mul_Shifting.pdb
+c:\users\hasham\documents\visual studio 2012\Projects\mul_Shifting\mul_Shifting\obj\Debug\mul_Shifting.csprojResolveAssemblyReference.cache
+c:\users\hasham\documents\visual studio 2012\Projects\mul_Shifting\mul_Shifting\obj\Debug\mul_Shifting.exe
+c:\users\hasham\documents\visual studio 2012\Projects\mul_Shifting\mul_Shifting\obj\Debug\mul_Shifting.pdb

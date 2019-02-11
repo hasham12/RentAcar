@@ -1,0 +1,97 @@
+﻿@model entity.CarInfo
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>CarInfo</legend>
+        <div style="display:none;">
+           <div class="editor-label">
+            @Html.LabelFor(model => model.CarId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CarId)
+            @Html.ValidationMessageFor(model => model.CarId)
+        </div>
+            </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CarModel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CarModel)
+            @Html.ValidationMessageFor(model => model.CarModel)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EngineNo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EngineNo)
+            @Html.ValidationMessageFor(model => model.EngineNo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ChasisNo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ChasisNo)
+            @Html.ValidationMessageFor(model => model.ChasisNo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PlateNo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PlateNo)
+            @Html.ValidationMessageFor(model => model.PlateNo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RegistrationYear)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RegistrationYear)
+            @Html.ValidationMessageFor(model => model.RegistrationYear)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RentChargePerDay)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RentChargePerDay)
+            @Html.ValidationMessageFor(model => model.RentChargePerDay)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MakeNameId, "CarMake")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("MakeNameId", String.Empty)
+            @Html.ValidationMessageFor(model => model.MakeNameId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RentChargesKm)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RentChargesKm)
+            @Html.ValidationMessageFor(model => model.RentChargesKm)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+

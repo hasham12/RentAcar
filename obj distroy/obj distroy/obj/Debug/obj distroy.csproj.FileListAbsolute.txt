@@ -1,0 +1,6 @@
+c:\users\hasham\documents\visual studio 2012\Projects\obj distroy\obj distroy\bin\Debug\obj distroy.exe.config
+c:\users\hasham\documents\visual studio 2012\Projects\obj distroy\obj distroy\bin\Debug\obj distroy.exe
+c:\users\hasham\documents\visual studio 2012\Projects\obj distroy\obj distroy\bin\Debug\obj distroy.pdb
+c:\users\hasham\documents\visual studio 2012\Projects\obj distroy\obj distroy\obj\Debug\obj distroy.csprojResolveAssemblyReference.cache
+c:\users\hasham\documents\visual studio 2012\Projects\obj distroy\obj distroy\obj\Debug\obj distroy.exe
+c:\users\hasham\documents\visual studio 2012\Projects\obj distroy\obj distroy\obj\Debug\obj distroy.pdb

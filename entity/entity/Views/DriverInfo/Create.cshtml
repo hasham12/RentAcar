@@ -1,0 +1,48 @@
+﻿@model entity.DriverInfo
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>DriverInfo</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DriverId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DriverId)
+            @Html.ValidationMessageFor(model => model.DriverId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DriverName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DriverName)
+            @Html.ValidationMessageFor(model => model.DriverName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DriverCharges)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DriverCharges)
+            @Html.ValidationMessageFor(model => model.DriverCharges)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

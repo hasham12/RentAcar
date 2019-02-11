@@ -1,0 +1,9 @@
+c:\users\hasham\documents\visual studio 2012\Projects\VoiceChat\VoiceChat\bin\Debug\VoiceChat.exe
+c:\users\hasham\documents\visual studio 2012\Projects\VoiceChat\VoiceChat\bin\Debug\VoiceChat.pdb
+c:\users\hasham\documents\visual studio 2012\Projects\VoiceChat\VoiceChat\bin\Debug\System.Networks.dll
+c:\users\hasham\documents\visual studio 2012\Projects\VoiceChat\VoiceChat\obj\Debug\VoiceChat.csprojResolveAssemblyReference.cache
+c:\users\hasham\documents\visual studio 2012\Projects\VoiceChat\VoiceChat\obj\Debug\VoiceChat.Form1.resources
+c:\users\hasham\documents\visual studio 2012\Projects\VoiceChat\VoiceChat\obj\Debug\VoiceChat.Properties.Resources.resources
+c:\users\hasham\documents\visual studio 2012\Projects\VoiceChat\VoiceChat\obj\Debug\VoiceChat.csproj.GenerateResource.Cache
+c:\users\hasham\documents\visual studio 2012\Projects\VoiceChat\VoiceChat\obj\Debug\VoiceChat.exe
+c:\users\hasham\documents\visual studio 2012\Projects\VoiceChat\VoiceChat\obj\Debug\VoiceChat.pdb

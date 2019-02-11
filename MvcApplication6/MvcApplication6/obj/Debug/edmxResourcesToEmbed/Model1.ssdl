@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="TestDBBModelStoreContainer">
+    <EntitySet Name="labtask1" EntityType="TestDBBModel.Store.labtask1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="logininfo1" EntityType="TestDBBModel.Store.logininfo1" store:Type="Tables" store:Schema="dbo" store:Name="logininfo1">
+      <DefiningQuery>SELECT 
+      [logininfo1].[UserName] AS [UserName], 
+      [logininfo1].[Pass] AS [Pass]
+      FROM [dbo].[logininfo1] AS [logininfo1]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="labtask1">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StudentName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FatherName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'TestDBB.dbo.logininfo1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="logininfo1">
+    <Key>
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Pass" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Pass" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+</Schema>

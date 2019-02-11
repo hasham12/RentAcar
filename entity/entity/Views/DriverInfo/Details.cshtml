@@ -1,0 +1,37 @@
+﻿@model entity.DriverInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>DriverInfo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DriverId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DriverId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DriverName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DriverName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DriverCharges)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DriverCharges)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+ 

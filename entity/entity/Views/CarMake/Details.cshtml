@@ -1,0 +1,29 @@
+﻿@model entity.CarMake
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>CarMake</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MakeNameId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MakeNameId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MakeName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MakeName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

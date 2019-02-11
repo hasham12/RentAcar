@@ -1,0 +1,109 @@
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\EntityFramework.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Owin.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebGrease.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\EntityFramework.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+c:\users\rxa\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+F:\WebApplication1\WebApplication1\bin\WebApplication1.dll
+F:\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+F:\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+F:\WebApplication1\WebApplication1\bin\EntityFramework.dll
+F:\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+F:\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+F:\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+F:\WebApplication1\WebApplication1\bin\Owin.dll
+F:\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+F:\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+F:\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+F:\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+F:\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+F:\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+F:\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+F:\WebApplication1\WebApplication1\bin\WebGrease.dll
+F:\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+F:\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+F:\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+F:\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+F:\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+F:\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+F:\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+F:\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+F:\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+F:\WebApplication1\WebApplication1\bin\EntityFramework.xml
+F:\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+F:\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+F:\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+F:\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

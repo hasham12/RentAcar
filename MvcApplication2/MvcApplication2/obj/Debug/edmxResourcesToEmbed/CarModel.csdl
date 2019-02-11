@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarRentalModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CarRentalEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="CarInfoes" EntityType="CarRentalModel.CarInfo" />
+    <EntitySet Name="CarMakes" EntityType="CarRentalModel.CarMake" />
+    <EntitySet Name="CustomerInfoes" EntityType="CarRentalModel.CustomerInfo" />
+    <EntitySet Name="CustomerTypes" EntityType="CarRentalModel.CustomerType" />
+    <EntitySet Name="DriverInfoes" EntityType="CarRentalModel.DriverInfo" />
+    <EntitySet Name="PickLocations" EntityType="CarRentalModel.PickLocation" />
+    <EntitySet Name="Rentals" EntityType="CarRentalModel.Rental" />
+    <AssociationSet Name="FK_CarInfo_CarMake" Association="CarRentalModel.FK_CarInfo_CarMake">
+      <End Role="CarMake" EntitySet="CarMakes" />
+      <End Role="CarInfo" EntitySet="CarInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_CarInfo" Association="CarRentalModel.FK_Rental_CarInfo">
+      <End Role="CarInfo" EntitySet="CarInfoes" />
+      <End Role="Rental" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerInfo_CustomerType" Association="CarRentalModel.FK_CustomerInfo_CustomerType">
+      <End Role="CustomerType" EntitySet="CustomerTypes" />
+      <End Role="CustomerInfo" EntitySet="CustomerInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_CustomerInfo" Association="CarRentalModel.FK_Rental_CustomerInfo">
+      <End Role="CustomerInfo" EntitySet="CustomerInfoes" />
+      <End Role="Rental" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_DriverInfo" Association="CarRentalModel.FK_Rental_DriverInfo">
+      <End Role="DriverInfo" EntitySet="DriverInfoes" />
+      <End Role="Rental" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_PickLocation" Association="CarRentalModel.FK_Rental_PickLocation">
+      <End Role="PickLocation" EntitySet="PickLocations" />
+      <End Role="Rental" EntitySet="Rentals" />
+    </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="CarRentalModel.sysdiagram" />
+  </EntityContainer>
+  <EntityType Name="CarInfo">
+    <Key>
+      <PropertyRef Name="CarId" />
+    </Key>
+    <Property Name="CarId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CarModel" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EngineNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ChasisNo" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="PlateNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RegistrationYear" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="RentChargePerDay" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="MakeNameId" Type="Int32" Nullable="false" />
+    <Property Name="RentChargesKm" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="CarMake" Relationship="CarRentalModel.FK_CarInfo_CarMake" FromRole="CarInfo" ToRole="CarMake" />
+    <NavigationProperty Name="Rentals" Relationship="CarRentalModel.FK_Rental_CarInfo" FromRole="CarInfo" ToRole="Rental" />
+  </EntityType>
+  <EntityType Name="CarMake">
+    <Key>
+      <PropertyRef Name="MakeNameId" />
+    </Key>
+    <Property Name="MakeNameId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="MakeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CarInfoes" Relationship="CarRentalModel.FK_CarInfo_CarMake" FromRole="CarMake" ToRole="CarInfo" />
+  </EntityType>
+  <EntityType Name="CustomerInfo">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CustomerCNIC" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="CustTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerType" Relationship="CarRentalModel.FK_CustomerInfo_CustomerType" FromRole="CustomerInfo" ToRole="CustomerType" />
+    <NavigationProperty Name="Rentals" Relationship="CarRentalModel.FK_Rental_CustomerInfo" FromRole="CustomerInfo" ToRole="Rental" />
+  </EntityType>
+  <EntityType Name="CustomerType">
+    <Key>
+      <PropertyRef Name="CustTypeId" />
+    </Key>
+    <Property Name="CustTypeId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CustTypeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Discount" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerInfoes" Relationship="CarRentalModel.FK_CustomerInfo_CustomerType" FromRole="CustomerType" ToRole="CustomerInfo" />
+  </EntityType>
+  <EntityType Name="DriverInfo">
+    <Key>
+      <PropertyRef Name="DriverId" />
+    </Key>
+    <Property Name="DriverId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="DriverName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DriverCharges" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Rentals" Relationship="CarRentalModel.FK_Rental_DriverInfo" FromRole="DriverInfo" ToRole="Rental" />
+  </EntityType>
+  <EntityType Name="PickLocation">
+    <Key>
+      <PropertyRef Name="LocationId" />
+    </Key>
+    <Property Name="LocationId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Country" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AddressPick" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Rentals" Relationship="CarRentalModel.FK_Rental_PickLocation" FromRole="PickLocation" ToRole="Rental" />
+  </EntityType>
+  <EntityType Name="Rental">
+    <Key>
+      <PropertyRef Name="CheckInDay" />
+      <PropertyRef Name="CheckOutDay" />
+      <PropertyRef Name="CustomerId" />
+      <PropertyRef Name="CarId" />
+      <PropertyRef Name="DriverId" />
+      <PropertyRef Name="LocationId" />
+    </Key>
+    <Property Name="CheckInDay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CheckOutDay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="CarId" Type="Int32" Nullable="false" />
+    <Property Name="DriverId" Type="Int32" Nullable="false" />
+    <Property Name="LocationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CarInfo" Relationship="CarRentalModel.FK_Rental_CarInfo" FromRole="Rental" ToRole="CarInfo" />
+    <NavigationProperty Name="CustomerInfo" Relationship="CarRentalModel.FK_Rental_CustomerInfo" FromRole="Rental" ToRole="CustomerInfo" />
+    <NavigationProperty Name="DriverInfo" Relationship="CarRentalModel.FK_Rental_DriverInfo" FromRole="Rental" ToRole="DriverInfo" />
+    <NavigationProperty Name="PickLocation" Relationship="CarRentalModel.FK_Rental_PickLocation" FromRole="Rental" ToRole="PickLocation" />
+  </EntityType>
+  <Association Name="FK_CarInfo_CarMake">
+    <End Role="CarMake" Type="CarRentalModel.CarMake" Multiplicity="1" />
+    <End Role="CarInfo" Type="CarRentalModel.CarInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CarMake">
+        <PropertyRef Name="MakeNameId" />
+      </Principal>
+      <Dependent Role="CarInfo">
+        <PropertyRef Name="MakeNameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_CarInfo">
+    <End Role="CarInfo" Type="CarRentalModel.CarInfo" Multiplicity="1" />
+    <End Role="Rental" Type="CarRentalModel.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CarInfo">
+        <PropertyRef Name="CarId" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="CarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerInfo_CustomerType">
+    <End Role="CustomerType" Type="CarRentalModel.CustomerType" Multiplicity="1" />
+    <End Role="CustomerInfo" Type="CarRentalModel.CustomerInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerType">
+        <PropertyRef Name="CustTypeId" />
+      </Principal>
+      <Dependent Role="CustomerInfo">
+        <PropertyRef Name="CustTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_CustomerInfo">
+    <End Role="CustomerInfo" Type="CarRentalModel.CustomerInfo" Multiplicity="1" />
+    <End Role="Rental" Type="CarRentalModel.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerInfo">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_DriverInfo">
+    <End Role="DriverInfo" Type="CarRentalModel.DriverInfo" Multiplicity="1" />
+    <End Role="Rental" Type="CarRentalModel.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DriverInfo">
+        <PropertyRef Name="DriverId" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="DriverId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_PickLocation">
+    <End Role="PickLocation" Type="CarRentalModel.PickLocation" Multiplicity="1" />
+    <End Role="Rental" Type="CarRentalModel.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PickLocation">
+        <PropertyRef Name="LocationId" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+</Schema>

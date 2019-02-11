@@ -1,0 +1,6 @@
+c:\users\hasham\documents\visual studio 2012\Projects\ca assgn\ca assgn\bin\Debug\ca assgn.exe.config
+c:\users\hasham\documents\visual studio 2012\Projects\ca assgn\ca assgn\bin\Debug\ca assgn.exe
+c:\users\hasham\documents\visual studio 2012\Projects\ca assgn\ca assgn\bin\Debug\ca assgn.pdb
+c:\users\hasham\documents\visual studio 2012\Projects\ca assgn\ca assgn\obj\Debug\ca assgn.csprojResolveAssemblyReference.cache
+c:\users\hasham\documents\visual studio 2012\Projects\ca assgn\ca assgn\obj\Debug\ca assgn.exe
+c:\users\hasham\documents\visual studio 2012\Projects\ca assgn\ca assgn\obj\Debug\ca assgn.pdb

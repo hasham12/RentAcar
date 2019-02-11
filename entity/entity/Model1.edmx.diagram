@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cf8bddbd6fdf46c19374020c91571d3b" Name="Diagram1" ZoomLevel="63">
+        <EntityTypeShape EntityType="CarRentalModel.CarInfo" Width="1.5" PointX="7.7779507077196381" PointY="1.8602443644126152" />
+        <EntityTypeShape EntityType="CarRentalModel.CarMake" Width="1.5" PointX="2.7554189612881368" PointY="18.437681713345313" />
+        <EntityTypeShape EntityType="CarRentalModel.CustomerInfo" Width="1.5" PointX="11.781605668264259" PointY="24.196072470488062" />
+        <EntityTypeShape EntityType="CarRentalModel.CustomerType" Width="1.5" PointX="11.393621418342748" PointY="4.384757088676448" />
+        <EntityTypeShape EntityType="CarRentalModel.dead" Width="1.5" PointX="3.37484194122946" PointY="25.484718871062956" />
+        <EntityTypeShape EntityType="CarRentalModel.DriverInfo" Width="1.5" PointX="5.5323533795458975" PointY="17.130794384112018" />
+        <EntityTypeShape EntityType="CarRentalModel.PickLocation" Width="1.5" PointX="4.2989841496101509" PointY="19.902208948462366" />
+        <EntityTypeShape EntityType="CarRentalModel.Rental" Width="1.5" PointX="0.981652848879645" PointY="12.856963536169829" />
+        <EntityTypeShape EntityType="CarRentalModel.sysdiagram" Width="1.5" PointX="3.4817782954693666" PointY="6.3822139233267929" />
+        <AssociationConnector Association="CarRentalModel.FK_CarInfo_CarMake" />
+        <AssociationConnector Association="CarRentalModel.FK_Rental_CarInfo" />
+        <AssociationConnector Association="CarRentalModel.FK_CustomerInfo_CustomerType" />
+        <AssociationConnector Association="CarRentalModel.FK_Rental_CustomerInfo" />
+        <AssociationConnector Association="CarRentalModel.FK_Rental_DriverInfo" />
+        <AssociationConnector Association="CarRentalModel.FK_Rental_PickLocation" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

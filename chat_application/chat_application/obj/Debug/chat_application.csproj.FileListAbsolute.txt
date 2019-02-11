@@ -1,0 +1,12 @@
+c:\users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\bin\Debug\chat_application.exe.config
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\bin\Debug\chat_application.exe
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\bin\Debug\chat_application.pdb
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\bin\Debug\NAudio.dll
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\bin\Debug\NAudio.WindowsMediaFormat.dll
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\bin\Debug\NAudio.xml
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\obj\Debug\chat_application.csprojResolveAssemblyReference.cache
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\obj\Debug\chat_application.Form1.resources
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\obj\Debug\chat_application.Properties.Resources.resources
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\obj\Debug\chat_application.csproj.GenerateResource.Cache
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\obj\Debug\chat_application.exe
+C:\Users\hasham\documents\visual studio 2012\Projects\chat_application\chat_application\obj\Debug\chat_application.pdb

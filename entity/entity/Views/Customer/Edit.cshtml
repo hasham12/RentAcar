@@ -1,0 +1,56 @@
+﻿@model entity.CustomerInfo
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>CustomerInfo</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CustomerId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CustomerId)
+            @Html.ValidationMessageFor(model => model.CustomerId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CustomerName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CustomerName)
+            @Html.ValidationMessageFor(model => model.CustomerName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CustomerCNIC)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CustomerCNIC)
+            @Html.ValidationMessageFor(model => model.CustomerCNIC)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CustTypeId, "CustomerType")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("CustTypeId", String.Empty)
+            @Html.ValidationMessageFor(model => model.CustTypeId)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
